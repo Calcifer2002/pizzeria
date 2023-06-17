@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  
+<h1>Order Confirmation</h1>
+
+<div class="box">
+  {% csrf_token %}
+       
+  <p>Thank you for your order, {{ order.name }}!</p>
+        
+  <p>Your order details:</p>
+  
+  <ul>
+    <li>
+      <b><u> Pizza:</b></u> 
+      <ul>
+        <li>{{order.pizza.crust}} crust</li>
+        <li>{{order.pizza.sauce}} sauce</li>
+        <li>{{order.pizza.cheese}} cheese</li>
+        <li>{{order.pizza.size}} size</li>
+      </ul>
+    </li>
+    <li>
+      <b><u> Toppings:</b></u>
+      <ul>
+        {% for topping in toppings %}
+        <li>{{ topping.name }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+  
+  <p><b><u>Your delivery details:</b></u></p>
+  <ul>
+    <li>Address: {{ order.address }}</li>
+  </ul>
+</div>
+{% endblock %}

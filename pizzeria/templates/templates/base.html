@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<!-- bootstrap -->
+		<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    	<!-- fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+		<script src="https://kit.fontawesome.com/3a07a9b42a.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:ital@1&family=Titillium+Web:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Titillium+Web:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+		<style>.box {
+			color: white;
+			background-color: #F28705;
+			border: 2px solid #E8E8E8;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+			text-align: center;
+		  }
+		  
+		  ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		  }
+		  
+		  li {
+			margin-bottom: 10px;
+		  }
+		  
+		  h1 {
+		   
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			text-align: center;
+		  }
+		  
+		  p {
+			margin-bottom: 20px;
+		  }
+		</style>
+		
+		{% block title %}
+		<!-- Default title if non is supplied by another template -->
+		{% endblock %}
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light" style=" background-color: white;">
+			<a class="navbar-brand" href="#">
+			  <h1 style="font-family: 'Titillium Web', sans-serif;font-size: 2em; margin-left: 10%;color: #F28705;">Pizzookie<span style="color: green;">!</span> <i class="fa-solid fa-pizza-slice fa-beat-fade" style="color:red"></i></h1>
+			  <p style="font-size: 1em;margin-left: 10%;line-height: 5px;"><i>Time to sauce it up..</i></p>
+			</a>
+		  </nav>
+		  
+		{% block content %}
+		
+    {% endblock %}
+	<footer class="bg-dark text-center text-white">
+		
+		<div class="text-center p-3" style="background-color: rgba(223, 135, 19, 0.785);">
+		  © 2023 Copyright:
+		  <a class="text-white" href="https://www.linkedin.com/in/malavika-shanker-89708517a/">Malavika Shanker</a>
+		</div>
+		
+	  </footer>
+	</body>
+</html> 
